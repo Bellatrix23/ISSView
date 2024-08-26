@@ -1,0 +1,55 @@
+/* body and HTML elements take up the full height of the viewport */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the video to cover the entire background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Style the content box that contains the text and data */
+.content-box {
+  background-color: rgba(63, 87, 99, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Remove default margin on the heading */
+h1 {
+  margin-top: 0;
+}
+
+/* Increase font size for paragraphs */
+p {
+  font-size: 1.2em;
+}
+
+/* Keyframes for the background movement (not currently used) */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0; /* Move the background more to the left */
+  }
+}
